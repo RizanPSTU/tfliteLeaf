@@ -1,0 +1,15 @@
+# for tensorflow installed from package manager
+tflite_convert --graph_def_file=f.pb --output_file=deeplab_mobilenetv2_513.tflite --output_format=TFLITE  --input_format=TENSORFLOW_GRAPHDEF  --input_arrays=ImageTensor  --output_arrays=SemanticPredictions --input_shapes=1,513,513,3 --inference_input_type=QUANTIZED_UINT8 --mean_values=128   --std_dev_values=128
+
+
+tflite_convert --graph_def_file=f.pb --output_file=test.tflite --input_arrays=ImageTensor  --output_arrays=SemanticPredictions --input_shapes=1,513,513,3 --inference_input_type=QUANTIZED_UINT8 --mean_values=128   --std_dev_values=128 --inference_type=FLOAT
+
+
+tflite_convert --graph_def_file=f.pb --output_file=te513.tflite --input_arrays=sub_2  --output_arrays=ResizeBilinear_2 --input_shapes=1,513,513,3 --inference_input_type=QUANTIZED_UINT8 --mean_values=128   --std_dev_values=128 --inference_type=FLOAT
+
+
+tflite_convert --graph_def_file=f.pb --output_file=te224.tflite --input_arrays=sub_2  --output_arrays=ResizeBilinear_2 --input_shapes=1,224,224,3 --inference_input_type=QUANTIZED_UINT8 --mean_values=128   --std_dev_values=128 --inference_type=FLOAT
+
+
+
+tflite_convert --graph_def_file=f2.pb --output_file=te257noQ.tflite --input_arrays=sub_2  --output_arrays=ResizeBilinear_2 --input_shapes=1,257,257,3  --inference_type=FLOAT

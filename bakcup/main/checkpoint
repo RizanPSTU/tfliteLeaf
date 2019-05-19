@@ -1,0 +1,6 @@
+model_checkpoint_path: "/root/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set_mobilenetv2/train/model.ckpt-15000"
+all_model_checkpoint_paths: "/root/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set_mobilenetv2/train/model.ckpt-0"
+all_model_checkpoint_paths: "/root/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set_mobilenetv2/train/model.ckpt-4478"
+all_model_checkpoint_paths: "/root/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set_mobilenetv2/train/model.ckpt-8994"
+all_model_checkpoint_paths: "/root/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set_mobilenetv2/train/model.ckpt-13513"
+all_model_checkpoint_paths: "/root/models/research/deeplab/datasets/pascal_voc_seg/exp/train_on_trainval_set_mobilenetv2/train/model.ckpt-15000"
